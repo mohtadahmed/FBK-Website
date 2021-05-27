@@ -1,0 +1,56 @@
+::selection {
+  background-color: #0274be;
+  color: white;
+}
+.research {
+  position: relative;
+}
+.publications li {
+  color: #838282;
+  font-family: Georgia, "Times New Roman", sans-serif;
+  font-style: italic;
+  margin: 10px auto;
+}
+.publications a {
+  text-decoration: none;
+  color: #5374be;
+}
+.publications a:hover {
+  color: darkgray;
+}
+
+/* Mentor Section Starts */
+
+.mentor-details {
+  text-align: center;
+}
+.mentor-details a {
+  text-decoration: none;
+  color: #4364ac;
+}
+.mentor-details a:hover {
+  color: black;
+}
+.mentor-details p {
+  font-family: Georgia, sans-serif;
+  font-weight: 450;
+  font-size: 14px;
+}
+.mentor-img img {
+  height: 200px;
+  width: 200px;
+}
+
+/* Footer Section */
+
+.footer-research {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.footer-research p {
+  padding: 8px;
+}
+/* Footer Section Ends */
