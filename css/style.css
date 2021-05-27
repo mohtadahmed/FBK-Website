@@ -1,7 +1,7 @@
 body {
   /* background: url(https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
   /* background: url(https://scontent.fcgp7-1.fna.fbcdn.net/v/t1.6435-9/67621327_2581290548569396_6144798809760202752_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=19026a&_nc_ohc=9j_8-i6ufMMAX80rcgZ&_nc_ht=scontent.fcgp7-1.fna&oh=cea9e4d0d83c9922c6256e25ca7f1f1d&oe=60D0A138); */
-  background: url(/img/fbkhand.png);
+  background: url(../img/fbkhand.png);
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: contain;
