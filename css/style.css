@@ -30,8 +30,8 @@ body {
 
 .navbar ul {
   display: flex;
-  margin-right: 15rem;
-  margin-left: 10rem;
+  /* margin-right: 15rem;
+  margin-left: 10rem; */
 }
 
 .navbar ul li {
