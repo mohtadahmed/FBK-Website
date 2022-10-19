@@ -1,3 +1,19 @@
+/* General CSS Starts */
+
 body {
   background-color: cadetblue;
 }
+
+/* General CSS Ends */
+
+
+/* Welcome Banner Section CSS Starts */
+
+.banner-bg {
+  background: url(../img/layered-steps-haikei.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Welcome Banner Section CSS Ends */
