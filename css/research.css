@@ -1,45 +1,51 @@
+/* General CSS Starts */
 ::selection {
   background-color: #0274be;
   color: white;
 }
-.research {
-  position: relative;
+
+body {
+  background-color: white;
 }
+
+/* General CSS Ends */
+
+
+/* Publication Section CSS Starts */
+
 .publications li {
   color: #838282;
   font-family: Georgia, "Times New Roman", sans-serif;
   font-style: italic;
   margin: 10px auto;
 }
+
 .publications a {
   text-decoration: none;
   color: #5374be;
 }
+
 .publications a:hover {
   color: darkgray;
 }
 
-/* Mentor Section Starts */
+/* Publication Section CSS Ends */
 
-.mentor-details {
-  text-align: center;
-}
-.mentor-details a {
-  text-decoration: none;
-  color: #4364ac;
-}
+
+/* Mentor Section CSS Starts */
+
 .mentor-details a:hover {
   color: black;
 }
+
 .mentor-details p {
   font-family: Georgia, sans-serif;
   font-weight: 450;
   font-size: 14px;
 }
-.mentor-img img {
-  height: 200px;
-  width: 200px;
-}
+
+/* Mentor Section CSS Ends */
+
 
 /* Footer Section */
 
@@ -53,4 +59,5 @@
 .footer-research p {
   padding: 8px;
 }
+
 /* Footer Section Ends */

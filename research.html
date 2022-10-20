@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://iamfbk.com/wp-content/uploads/2021/01/cropped-Logo_2-300x300.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Google Fonts Tag -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -18,56 +19,77 @@
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-
-    <title>Profile-Faisal Bin Kashem</title>
-    <!-- Style Sheets Tag -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/profile.css">
-    <link rel="stylesheet" href="./css/research.css">
+    <!-- Title Tag -->
+    <title>Research | Faisal Bin Kashem</title>
+    <!-- CSS Style Sheets Tag -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/research.css">
 </head>
 
 <body>
-
-    <!-- Navigation Section Starts -->
-    <div class="container-fluid bg-dark nav-section">
-        <div class="logo">
-            <img src="./img/logo.jpg" alt="">
-        </div>
-        <div class="navbar" id="nav-bars">
-            <i class="far fa-window-close" onclick="closeMenu()"></i>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="#">Scratchpad</a></li>
-                <li><a href="#">Through The Lens</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <i class="fas fa-bars" onclick="showMenu()"></i>
-    </div>
-    <!-- Navigation Section Ends -->
+    <!-- Header Section -->
+    <header>
+        <!-- Navigation Section -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.jpg" class="img-fluid" height="100" width="100" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav css-navbar-link text-center my-lg-0 my-3">
+                        <li class="nav-item me-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link active-link" href="research.html">Research</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="research.html">Scratchpad</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="research.html">Through The Lens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="research.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation Section -->
+    </header>
+    <!-- Header Section -->
 
     <!-- Research Interest Section Starts -->
-    <div class="container research">
-        <div class="row m-auto text-center">
-            <div class="col-12 bg-dark mt-4 text-white">
+    <div class="container">
+        <div class="text-center">
+            <div class="bg-dark p-2 my-4 text-white">
                 <h2>Research Interest</h2>
             </div>
-            <div class="col-md mt-4 ml-2 mr-2 bg-secondary p-1 rounded rounded-pill text-white">
-                Nanobiosensor
-            </div>
-            <div class="col-md mt-4 ml-2 mr-2 bg-primary p-1 rounded rounded-pill text-white">
-                Biosignal Processing
-            </div>
-            <div class="col-md mt-4 mr-2 ml-2 bg-danger p-1 rounded rounded-pill text-white">
-                Machine Learning
-            </div>
-            <div class="col-md mt-4 mr-2 ml-2 bg-success p-1 rounded rounded-pill text-white">
-                Renewable Energy
-            </div>
-            <div class="col-md mt-4 mr-2 ml-2 bg-info p-1 rounded rounded-pill text-white">
-                Nanoelectronics
+            <div class="text-white d-flex d-lg-inline flex-column">
+                <span class="bg-secondary p-3 rounded my-2 me-lg-2">
+                    Nanobiosensor
+                </span>
+                <span class="bg-primary p-3 rounded my-2 me-lg-2">
+                    Biosignal Processing
+                </span>
+                <span class="bg-danger p-3 rounded my-2 me-lg-2">
+                    Machine Learning
+                </span>
+                <span class="bg-success p-3 rounded my-2 me-lg-2">
+                    Renewable Energy
+                </span>
+                <span class="bg-dark p-3 rounded my-2 me-lg-2">
+                    Nanoelectronics
+                </span>
             </div>
         </div>
     </div>
@@ -75,32 +97,36 @@
 
     <!-- Publication Section Starts -->
     <div class="container">
-        <div class="row mt-5 text-center">
-            <div class="col-12 bg-light mt-5 text-danger border-bottom border-dark">
+        <div class="mt-5 text-center">
+            <div class="bg-light mt-5 text-danger border-bottom border-dark">
                 <h2>Publications</h2>
             </div>
-            <div class="col-12 mt-4 publications">
+            <div class="mt-4 publications">
                 <ol>
-                    <li class="text-justify">
-                        Hossan, A., Kashem, F.B., Hasan, M.M., Naher, S. and Rahman, M.I., 2016, December. <a href="#">A
-                            smart system for driver’s fatigue detection, remote notification and semi-automatic parking
+                    <li>
+                        Hossan, A., <strong>Kashem, F.B.</strong>, Hasan, M.M., Naher, S. and Rahman, M.I., 2016,
+                        December. <a href="#">A
+                            smart system for driver's fatigue detection, remote notification and semi-automatic parking
                             of vehicles to prevent
                             road accidents.</a>In 2016 International Conference on Medical Engineering, Health
                         Informatics and Technology (MediTec) (pp. 1-6). IEEE.
                     </li>
-                    <li class="text-justify">Chowdhury, A.M., Kashem, F.B., Hossan, A. and Hasan, M.M., 2017, February.
+                    <li>Chowdhury, A.M., <strong>Kashem, F.B.</strong>, Hossan, A. and Hasan, M.M.,
+                        2017, February.
                         <a href="#">Brain
                             controlled assistive buzzer system for physically impaired people.</a>In 2017 International
                         Conference on Electrical, Computer and Communication Engineering (ECCE) (pp. 666-669). IEEE.
                     </li>
-                    <li class="text-justify">
-                        Kashem, F.B. and Arefin, M.S., 2017, December. <a href="#">Feasibility analysis of grid
+                    <li>
+                        <strong>Kashem, F.B.</strong> and Arefin, M.S., 2017, December. <a href="#">Feasibility analysis
+                            of grid
                             connected mini hybrid energy system in coastal region of Chittagong, Bangladesh.</a>In 2017
                         3rd International Conference on Electrical Information and Communication Technology (EICT) (pp.
                         1-5). IEEE.
                     </li>
-                    <li class="text-justify">
-                        Kashem, F.B. and Alam, M.D., 2017, December. <a href="#">Optimal design of a standalone hybrid
+                    <li>
+                        <strong>Kashem, F.B.</strong> and Alam, M.D., 2017, December. <a href="#">Optimal design of a
+                            standalone hybrid
                             system for supporting Sajek Valley, a remote tourist spot of Bangladesh.</a> In 2017 3rd
                         International Conference on Electrical Information and Communication Technology (EICT) (pp.
                         1-5). IEEE.
@@ -114,84 +140,95 @@
     <!-- Mentors & Collaborators Section Starts -->
     <div class="container">
         <div class="row mt-5 text-center">
-            <div class="col-12 bg-light mt-5 text-danger border-bottom border-dark">
+            <div class="col-12 bg-light my-5 text-danger border-bottom border-dark">
                 <h2>Mentors and Collaborators</h2>
             </div>
             <div class="col-md-3 mt-2">
-                <div class="mentor-img">
-                    <img src="https://iamfbk.com/wp-content/uploads/2021/03/Kadir_Photo.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="mentor-details mt-2">
-                    <h6><a href="#">Dr. Muhammad Abdul Kadir</a></h6>
-                    <p>Associate Professor <br>University of Dhaka</p>
-                </div>
-            </div>
-            <div class="col-md-3 mt-2">
-                <div class="mentor-img">
-                    <img src="https://iamfbk.com/wp-content/uploads/2021/03/Alim-sir.png" alt="" class="img-fluid">
-                </div>
-                <div class="mentor-details mt-2">
-                    <h6><a href="#">Dr. Mohammad Abdul Alim</a></h6>
-                    <p>Professor <br>University of Chittagong</p>
-                </div>
-            </div>
-            <div class="col-md-3 mt-2">
-                <div class="mentor-img">
-                    <img src="https://iamfbk.com/wp-content/uploads/2021/03/77_JQ2G7JOQWW-ovttnchpaogast5qkxax7trigxeixh24ki596ump4o.png"
+                <div>
+                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="" class="img-fluid">
                 </div>
-                <div class="mentor-details mt-2">
-                    <h6><a href="#">Dr. Kazi Tanvir Ahmmed</a></h6>
-                    <p>Associate Professor <br>University of Dhaka</p>
+                <div class="mt-2">
+                    <h6><a href="#" class="text-decoration-none">Dr. Muhammad Abdul Kadir</a></h6>
+                    <p class="mb-0">Associate Professor</p>
+                    <p>University of Dhaka</p>
                 </div>
             </div>
             <div class="col-md-3 mt-2">
-                <div class="mentor-img">
-                    <img src="https://iamfbk.com/wp-content/uploads/2021/01/cropped-Logo_2-300x300.png" alt=""
-                        class="img-fluid">
+                <div>
+                    <img src="https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="img-fluid">
                 </div>
-                <div class="mentor-details mt-2">
-                    <h6><a href="#">Mr. Alamgir Hossan</a></h6>
-                    <p>Assistant Professor <br>University of Dhaka</p>
-                </div>
-            </div>
-            <div class="col-md-3 mt-2">
-                <div class="mentor-img">
-                    <img src="https://iamfbk.com/wp-content/uploads/2021/01/cropped-Logo_2-300x300.png" alt=""
-                        class="img-fluid">
-                </div>
-                <div class="mentor-details mt-2">
-                    <h6><a href="#">Mr. Md. Didarul Alam</a></h6>
-                    <p>Assistant Professor <br>University of Dhaka</p>
+                <div class="mt-2">
+                    <h6><a href="#" class="text-decoration-none">Dr. Mohammad Abdul Alim</a></h6>
+                    <p class="mb-0">Professor</p>
+                    <p>University of Chittagong</p>
                 </div>
             </div>
             <div class="col-md-3 mt-2">
-                <div class="mentor-img">
-                    <img src="https://iamfbk.com/wp-content/uploads/2021/01/cropped-Logo_2-300x300.png" alt=""
-                        class="img-fluid">
+                <div>
+                    <img src="https://images.pexels.com/photos/3934707/pexels-photo-3934707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="img-fluid">
                 </div>
-                <div class="mentor-details mt-2">
-                    <h6><a href="#">Md. Mehedi Hasan</a></h6>
-                    <p>MS Student<br>Beihang University</p>
-                </div>
-            </div>
-            <div class="col-md-3 mt-2">
-                <div class="mentor-img">
-                    <img src="https://iamfbk.com/wp-content/uploads/2021/01/cropped-Logo_2-300x300.png" alt=""
-                        class="img-fluid">
-                </div>
-                <div class="mentor-details mt-2">
-                    <h6><a href="#">Mohammad Shahriar Arefin</a></h6>
-                    <p>PhD Student<br>Temple University</p>
+                <div class="mt-2">
+                    <h6><a href="#" class="text-decoration-none">Dr. Kazi Tanvir Ahmmed</a></h6>
+                    <p class="mb-0">Associate Professor</p>
+                    <p>University of Chittagong</p>
                 </div>
             </div>
             <div class="col-md-3 mt-2">
-                <div class="mentor-img">
-                    <img src="https://iamfbk.com/wp-content/uploads/2021/03/a.jpg" alt="" class="img-fluid">
+                <div>
+                    <img src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="img-fluid">
                 </div>
-                <div class="mentor-details mt-2">
-                    <h6><a href="#">A. M. Mahmud Chowdhury</a></h6>
-                    <p>PhD Student<br>Catholic University of America</p>
+                <div class="mt-2">
+                    <h6><a href="#" class="text-decoration-none">Mr. Alamgir Hossan</a></h6>
+                    <p class="mb-0">Assistant Professor</p>
+                    <p>University of Chittagong</p>
+                </div>
+            </div>
+            <div class="col-md-3 mt-2">
+                <div>
+                    <img src="https://images.pexels.com/photos/4071709/pexels-photo-4071709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="img-fluid">
+                </div>
+                <div class="mt-2">
+                    <h6><a href="#" class="text-decoration-none">Mr. Md. Didarul Alam</a></h6>
+                    <p class="mb-0">Assistant Professor</p>
+                    <p>University of Chittagong</p>
+                </div>
+            </div>
+            <div class="col-md-3 mt-2">
+                <div>
+                    <img src="https://images.pexels.com/photos/3799790/pexels-photo-3799790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="img-fluid">
+                </div>
+                <div class="mt-2">
+                    <h6><a href="#" class="text-decoration-none">Md. Mehedi Hasan</a></h6>
+                    <p class="mb-0">MS Student</p>
+                    <p>Beihang University</p>
+                </div>
+            </div>
+            <div class="col-md-3 mt-2">
+                <div>
+                    <img src="https://images.pexels.com/photos/3139612/pexels-photo-3139612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="img-fluid">
+                </div>
+                <div class="mt-2">
+                    <h6><a href="#" class="text-decoration-none">Mohammad Shahriar Arefin</a></h6>
+                    <p class="mb-0">PhD Student</p>
+                    <p>Temple University</p>
+                </div>
+            </div>
+            <div class="col-md-3 mt-2">
+                <div>
+                    <img src="https://images.pexels.com/photos/3782791/pexels-photo-3782791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="img-fluid">
+                </div>
+                <div class="mt-2">
+                    <h6><a href="#" class="text-decoration-none">A. M. Mahmud Chowdhury</a></h6>
+                    <p class="mb-0">PhD Student</p>
+                    <p>Catholic University of America</p>
                 </div>
             </div>
         </div>
@@ -201,48 +238,16 @@
 
 
     <!-- Footer Section Starts-->
-    <footer>
-        <div class="footer-research bg-dark text-white text-center">
-            <p>Copyright <i class="far fa-copyright"></i> 2021. Faisal Bin Kashem</p>
-        </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">Copyright <i class="far fa-copyright"></i>2022. Faisal Bin Kashem</p>
     </footer>
     <!-- Footer Section Ends -->
 
 
 
 
-
-
-
-
-
-
-
-    <!-- JavaScript Section -->
-    <script>
-        let show = document.getElementById("nav-bars")
-        function showMenu() {
-            show.style.display = "block";
-
-        }
-        function closeMenu() {
-            show.style.display = "none";
-        }
+    <!-- Bootstrap JavaScript Source Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
-    <!-- JavaScript Section Ends -->
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 </body>
