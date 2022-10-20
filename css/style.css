@@ -6,6 +6,27 @@ body {
 
 /* General CSS Ends */
 
+/* Nav Bar Section CSS Starts */
+
+.active-link {
+  color: white;
+  background-color: #2f3542;
+}
+
+.css-navbar-link li a {
+  border-radius: 10px;
+  border-bottom: 1px solid #0fb9b1;
+  margin-right: 10px;
+}
+
+.css-navbar-link li a:hover {
+  color: white;
+  background-color: #2f3542;
+  border-bottom: 1px solid #0fb9b1;
+}
+
+/* Nav Bar Section CSS Starts */
+
 
 /* Welcome Banner Section CSS Starts */
 
